@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kplayout2019.MainApplication
 import com.kplayout2019.R
-import com.kplayout2019.databinding.MainScreenBinding
+import com.kplayout2019.databinding.MainScreenLibraryBinding
 import com.kplayout2019.screen.moreapps.MoreApps
 import com.kplayout2019.screen.wallpapers.Wallpapers
 import com.kplayout2019.utils.ApplyingTheme
@@ -20,7 +20,7 @@ import effects.ripper.water.themejunky.com.rippereffects.ManagerWaterEffects
 class MainScreenLibrary : AppCompatActivity() {
     private val mTools = Tools()
     private lateinit var mViewModel: MainScreenViewModel
-    private lateinit var mBinding: MainScreenBinding
+    private lateinit var mBinding: MainScreenLibraryBinding
 
 
 
