@@ -4,7 +4,7 @@
     <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
     <application
-            android:name=".MainApplication"
+            android:name=".MyMainApplication"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
@@ -26,22 +26,6 @@
         <meta-data
                 android:name="com.google.android.gms.ads.AD_MANAGER_APP"
                 android:value="true"/>
-
-        <receiver
-                android:name=".receiver.KeyboardThemeReceiver"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="com.themejunky.keyboardplus.plugin.KEYBOARD_THEME"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.ALTERNATIVE"/>
-                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
-            </intent-filter>
-
-            <meta-data
-                    android:name="com.themejunky.keyboardplus.plugindata.keyboardtheme"
-                    android:resource="@xml/keyboard_themes"/>
-        </receiver>
 
         <!--PushNotification-->
 

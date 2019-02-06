@@ -6,7 +6,7 @@ import module.themejunky.com.tj_gae.Module_GoogleAnalyticsEvents
 var packageNameApp=""
 var redirectGP = ""
 
-class MainApplication: Application() {
+class MyMainApplication: Application() {
 
     lateinit var MGAE :Module_GoogleAnalyticsEvents
     override fun onCreate() {

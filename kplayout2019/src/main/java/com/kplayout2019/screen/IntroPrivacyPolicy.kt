@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.google.firebase.FirebaseApp
 import com.google.firebase.messaging.FirebaseMessaging
-import com.kplayout2019.MainApplication
+import com.kplayout2019.MyMainApplication
 import com.kplayout2019.R
 import com.kplayout2019.utils.Tools
 
@@ -27,7 +27,7 @@ class IntroPrivacyPolicy : AppCompatActivity(), View.OnClickListener {
             Tools().redirectLayout(this)
             nrOfEntries =  prefs.getInt("nrOfEntries",0)
             nrOfEntries++
-            (application as MainApplication).MGAE.getEvents(getString(R.string.layout_event),"Number of Entries","Number of Entries: ${nrOfEntries}")
+            (application as MyMainApplication).MGAE.getEvents(getString(R.string.layout_event),"Number of Entries","Number of Entries: ${nrOfEntries}")
             prefs.edit().putInt("nrOfEntries", nrOfEntries).apply()
         }
     }
@@ -44,7 +44,7 @@ class IntroPrivacyPolicy : AppCompatActivity(), View.OnClickListener {
             R.id.nView5 -> {
                 Tools().redirectLayout(this)
                 nrOfEntries++
-                (application as MainApplication).MGAE.getEvents(getString(R.string.layout_event),"Number of Entries","Number of Entries: ${nrOfEntries}")
+                (application as MyMainApplication).MGAE.getEvents(getString(R.string.layout_event),"Number of Entries","Number of Entries: ${nrOfEntries}")
                 prefs.edit().putBoolean("first", true).apply()
                 prefs.edit().putInt("nrOfEntries", nrOfEntries).apply()
 

@@ -4,7 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.kplayout2019.MainApplication
+import com.kplayout2019.MyMainApplication
 
 class RateScreenActivity : AppCompatActivity() {
 
@@ -15,7 +15,7 @@ class RateScreenActivity : AppCompatActivity() {
                 Intent.ACTION_VIEW,
                 Uri.parse("https://play.google.com/store/apps/details?id=$packageName"))
         )
-        (application as MainApplication).MGAE.getEvents("asfdfasd","Click on rate","Click on Button")
+        (application as MyMainApplication).MGAE.getEvents("asfdfasd","Click on rate","Click on Button")
         finish ()
 
     }

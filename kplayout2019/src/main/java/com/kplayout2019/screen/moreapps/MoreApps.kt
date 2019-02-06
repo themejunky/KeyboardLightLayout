@@ -8,7 +8,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.kplayout2019.MainApplication
+import com.kplayout2019.MyMainApplication
 import com.kplayout2019.R
 import com.kplayout2019.screen.moreapps.utils.MoreAppsAdapter
 import com.kplayout2019.screen.moreapps.utils.setWaMoreAppsAdapter
@@ -50,6 +50,6 @@ class MoreApps  : AppCompatActivity() {
     }
 
     fun redirectToGP(urlString: String,position:Int){
-        (application as MainApplication).MGAE.getEvents("taseeesa","MoreApps: Click on position: ${position} ${urlString}","Click on Button")
+        (application as MyMainApplication).MGAE.getEvents("taseeesa","MoreApps: Click on position: ${position} ${urlString}","Click on Button")
         startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(urlString)))}
 }
