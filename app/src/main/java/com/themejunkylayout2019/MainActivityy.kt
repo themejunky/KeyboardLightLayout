@@ -7,7 +7,7 @@ import android.util.Log
 import com.kplayout2019.ManagerLayout
 import com.kplayout2019.screen.IntroPrivacyPolicy
 
-class MainActivity : AppCompatActivity() {
+class MainActivityy : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
