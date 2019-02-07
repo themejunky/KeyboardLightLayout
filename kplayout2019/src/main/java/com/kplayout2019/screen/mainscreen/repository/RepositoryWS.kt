@@ -2,8 +2,8 @@ package com.kplayout2019.screen.mainscreen.repository
 
 import com.kplayout2019.model.AdsReceived
 import com.kplayout2019.model.ThemeItem
+import com.kplayout2019.packageNameApp
 import com.kplayout2019.retrofit.RetrofitService
-import com.kplayout2019.screen.packageNameApp
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers

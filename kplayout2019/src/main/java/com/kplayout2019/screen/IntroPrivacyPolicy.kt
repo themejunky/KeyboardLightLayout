@@ -12,12 +12,9 @@ import com.kplayout2019.R
 import com.kplayout2019.utils.Tools
 import module.themejunky.com.tj_gae.Module_GoogleAnalyticsEvents
 
-var packageNameApp=""
-var redirectGP = ""
 class IntroPrivacyPolicy : AppCompatActivity(), View.OnClickListener {
     lateinit var prefs: SharedPreferences
     var nrOfEntries = 0
-    lateinit var MGAE :Module_GoogleAnalyticsEvents
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro_privacy_policy)
@@ -40,9 +37,6 @@ class IntroPrivacyPolicy : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.nView5).setOnClickListener(this)
         findViewById<View>(R.id.nView6).setOnClickListener(this)
         findViewById<View>(R.id.nView7).setOnClickListener(this)
-
-        packageNameApp = packageName
-        MGAE= Module_GoogleAnalyticsEvents.getInstance(this,getString(R.string.id_google_analytics))
     }
 
     override fun onClick(v: View) {
