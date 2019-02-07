@@ -1,11 +1,11 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.kplayout2019">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
     <application
             android:name=".MyMainApplication"
-            android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
@@ -13,13 +13,10 @@
             android:usesCleartextTraffic="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".screen.RateScreenActivity">
-        </activity>
-        <activity android:name=".screen.mainscreen.MainScreenLibrary">
-        </activity>
-        <activity android:name=".screen.IntroPrivacyPolicy">
 
-        </activity>
+        <activity android:name=".screen.RateScreenActivity"/>
+        <activity android:name=".screen.mainscreen.MainScreenLibrary"/>
+        <activity android:name=".screen.IntroPrivacyPolicy"/>
         <activity android:name=".screen.wallpapers.Wallpapers"/>
         <activity android:name=".screen.moreapps.MoreApps"/>
 
@@ -35,6 +32,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
+
         <service
                 android:name=".service.MyFirebaseInstanceIDService">
             <intent-filter>

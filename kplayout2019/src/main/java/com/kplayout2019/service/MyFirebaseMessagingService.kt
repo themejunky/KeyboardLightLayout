@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import com.kplayout2019.R
-import com.kplayout2019.redirectGP
+import com.kplayout2019.screen.redirectGP
 
 
 class MyFirebaseMessagingService  : FirebaseMessagingService() {
