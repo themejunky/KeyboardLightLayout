@@ -10,7 +10,6 @@ import com.google.firebase.messaging.FirebaseMessaging
 import com.kplayout2019.MyMainApplication
 import com.kplayout2019.R
 import com.kplayout2019.utils.Tools
-import module.themejunky.com.tj_gae.Module_GoogleAnalyticsEvents
 
 class IntroPrivacyPolicy : AppCompatActivity(), View.OnClickListener {
     lateinit var prefs: SharedPreferences
