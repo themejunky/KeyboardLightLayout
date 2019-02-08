@@ -79,6 +79,7 @@ open class ApplyingTheme : Loading.LoadingInterface, ManagerAdmob.ManagerAdmobIn
     open fun applyTheme(nContext: Activity) {
         Log.d("afwef","2 - applyTheme")
         nContext.startActivity(Intent(nContext,ManagerLayout.getInstance().getMyClass()))
+        nContext.finish()
 
     }
 
