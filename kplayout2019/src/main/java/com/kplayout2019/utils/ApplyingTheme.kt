@@ -11,7 +11,12 @@ import com.kplayout2019.ManagerLayout
 import com.kplayout2019.ads.Loading
 import com.kplayout2019.ads.ManagerAdmob
 import com.kplayout2019.ads.ManagerAppNext
+import com.kplayout2019.isKplusOnStore
 import com.theme.junky.pushnotificationlib.R
+import java.io.IOException
+import java.net.HttpURLConnection
+import java.net.ProtocolException
+import java.net.URL
 
 open class ApplyingTheme : Loading.LoadingInterface, ManagerAdmob.ManagerAdmobInterface,  ManagerAppNext.ManagerAppNextInterface {
     lateinit var prefs: SharedPreferences
@@ -77,10 +82,19 @@ open class ApplyingTheme : Loading.LoadingInterface, ManagerAdmob.ManagerAdmobIn
     }
 
     open fun applyTheme(nContext: Activity) {
-        Log.d("afwef","2 - applyTheme")
-        nContext.startActivity(Intent(nContext,ManagerLayout.getInstance().getMyClass()))
-        nContext.finish()
+        Log.d("isKplusOnStore","1 " + isKplusOnStore)
+        if(isKplusOnStore){
+            Log.d("isKplusOnStore","2 " + isKplusOnStore)
+            Tools().directApply(nContext)
+        }else{
+            Log.d("isKplusOnStore","3 " + isKplusOnStore)
+            Log.d("afwef","2 - applyTheme")
+            nContext.startActivity(Intent(nContext,ManagerLayout.getInstance().getMyClass()))
+            nContext.finish()
+        }
+
 
     }
+
 
 }
