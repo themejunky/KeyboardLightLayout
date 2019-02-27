@@ -85,7 +85,7 @@ open class ApplyingTheme : Loading.LoadingInterface, ManagerAdmob.ManagerAdmobIn
         Log.d("isKplusOnStore","1 " + isKplusOnStore)
         if(isKplusOnStore){
             Log.d("isKplusOnStore","2 " + isKplusOnStore)
-            Tools().directApply(nContext)
+            Tools().applyTheme(nContext)
         }else{
             Log.d("isKplusOnStore","3 " + isKplusOnStore)
             Log.d("afwef","2 - applyTheme")
