@@ -24,7 +24,7 @@
                 android:name="com.google.android.gms.ads.AD_MANAGER_APP"
                 android:value="true"/>
 
-        <receiver
+       <!-- <receiver
                 android:name=".receiver.KeyboardThemeReceiver"
                 android:exported="true">
             <intent-filter>
@@ -38,7 +38,7 @@
             <meta-data
                     android:name="com.themejunky.keyboardplus.plugindata.keyboardtheme"
                     android:resource="@xml/keyboard_themes"/>
-        </receiver>
+        </receiver>-->
 
         <!--PushNotification-->
 
