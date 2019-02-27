@@ -5,6 +5,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.net.Uri
 import android.widget.Button
+import android.widget.LinearLayout
 import com.kplayout2019.R
 
 class MotherIsNotInstalled private constructor() {
@@ -25,7 +26,7 @@ class MotherIsNotInstalled private constructor() {
         dialogBuilder.setView(dialogView)
         val mDialog = dialogBuilder.create()
         val button1 = dialogView.findViewById(R.id.nView1) as Button
-        val button2 = dialogView.findViewById(R.id.nView2) as Button
+        val button2 = dialogView.findViewById(R.id.nView2) as LinearLayout
         button1.setOnClickListener {mDialog.dismiss()  }
         button2.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
